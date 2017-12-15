@@ -1,0 +1,22 @@
+@import '../../assets/scss/core.scss';
+
+footer p {
+	color: white;
+	text-align: center;
+}
+
+.social-media__container {
+	text-align: center;
+	a {
+		color: white;
+		margin: 0 5px;
+	}
+}
+
+footer {
+	background: $primary-color;
+	color: white;
+	padding: 30px 0;
+	float: left;
+	width: 100%;
+}

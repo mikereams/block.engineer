@@ -1,0 +1,121 @@
+// Material colors
+$primary-color : #1976D2;
+$secondary-color :#BBDEFB;
+$default-blue: #2196F3;
+$accent: #536DFE;
+$text-color: #212121;
+$secondary-text-color: #757575;
+$divider: #BDBDBD;
+$grey : #bdbdbd;
+$text : #414549;
+$font-huge: 50px;
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Product Sans";
+	padding: 0;
+	margin: 0;
+	font-weight: 500;
+}
+
+h1.title {
+	font-size: $font-huge;
+	text-align: center;
+	color: white;
+	padding: 30px 0;
+}
+
+h2.slogan {
+	text-align: center;
+	color: white;
+	padding: 20px 0;
+}
+
+p, a, li, div {
+	font-family: "Product Sans";
+    line-height: 34px;
+    color: #414549;
+    font-size: 18px;
+}
+
+span {
+	font-family: "Product Sans";
+    font-size: 18px;
+}
+
+.container__inner {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.mat-toolbar {
+	padding: 0;
+	box-shadow: rgba(0, 0, 0, 0.137255) 0px 4px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+a.link {
+	text-decoration: underline;
+	line-height: 1.8em;
+	color: #0277bd;
+}
+
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.container__menu {
+	width: 1080px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.container__content {
+	float: left;
+	padding: 90px 0 0;
+	width: 100%;
+	&.spacer {
+		padding: 30px 0 0;
+	}
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.mat-form-field.fullwidth {
+	width: 100%;
+}
+
+@media only screen and (max-width: 840px) {
+	.container {
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+	.container__menu {
+		width: 100%;
+		margin: 0;
+	}
+	.container__inner {
+	    width: calc(100% - 32px);
+		padding: 0 15px;
+		&.spacer-top {
+		    width: calc(100% - 32px);
+			padding-top: 60px;
+		}
+
+	}
+
+   	p, a, span, li, div {
+    	font-size: 16px;
+	}
+
+}

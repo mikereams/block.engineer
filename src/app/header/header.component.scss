@@ -1,0 +1,60 @@
+@import '../../assets/scss/core.scss';
+
+.icons {
+	width: 40px;
+    margin-top: 10px;
+    span, .mat-button, .mat-icon-button, .mat-raised-button {
+    	color: white;
+    }
+}
+
+img {
+	border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    float: right;
+    margin: 8px 0 0;
+}
+
+.menu-button {
+	font-size: 20px;
+	color: white;
+}
+
+h3.menu-dropdown {
+    padding-left: 5px;
+    text-transform: uppercase;
+    margin: 0 2px 0px 0px;
+    padding: 0px 0 5px 15px;	
+    border-bottom: solid 5px $primary-color;
+}
+
+mat-toolbar {
+   border-bottom: solid 5px $primary-color;
+}
+
+a.link.menu_item {
+	text-decoration: none;
+	line-height: 2.9;
+	color: $primary-color;
+}
+
+.logo {
+    float: left;
+    background: $primary-color;
+    height: 100%;
+    letter-spacing: 10px;
+    font-weight: 800;
+    font-size: $font-huge;
+    span {
+		color: white;
+	    padding: 15px 10px 15px 20px;
+	    font-family: "Cabin";
+	    float: left;    
+	    a {
+	    	text-decoration: none;
+	    	color: white;
+   		    font-size: 26px;
+	    }
+    }
+}

@@ -1,0 +1,24 @@
+
+<div>
+	<mat-toolbar color="primary">
+	  <div class="container__menu">
+		  <div class="logo"><span><a routerLink="/" fragment="top">B</a></span></div>
+<!-- 		  <div class="icons pull-right">
+
+			<a mat-icon-button [matMenuTriggerFor]="menu">
+			  <mat-icon>more_vert</mat-icon>
+	   		</a>
+ 			</div>
+	  		<mat-menu #menu="matMenu">
+			    <div *ngIf="authService.afAuth.authState | async; let user; else showLogin">
+				  <h1>Hello {{ user.displayName }}!</h1>
+				  <button (click)="logout()">Logout</button>
+				</div>
+				<ng-template #showLogin>
+				  <p>Please login.</p>
+	   		      <button (click)="login()">Login with Google</button>
+				</ng-template>
+			</mat-menu>
+ -->	  </div>
+	</mat-toolbar>
+</div>

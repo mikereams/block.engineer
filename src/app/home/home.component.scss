@@ -1,0 +1,64 @@
+@import '../../assets/scss/core.scss';
+
+.container-fluid.hero {
+	background: $default-blue;
+	padding: 60px 0;
+}
+
+.container-fluid.passport {
+	background: $secondary-color;
+	padding: 60px 0;
+}
+
+.section__hero__block {
+	border: solid 5px $primary-color;
+	text-align: center;
+	padding: 20px;
+	mat-icon {
+		font-size: $font-huge;
+		color: white;
+	    border-radius: 50%;
+	    border: solid 2px white;
+	    padding: 25px;
+	    width: 45px;
+	    height: 45px;
+	    margin: 10px 0;
+	}
+}
+
+.section__passport {
+	.search {
+		text-align: center;
+		padding: 30px 0;
+		.txid {
+			width: 300px;
+		}
+	}
+	mat-card {
+		height: 490px;
+
+		mat-icon {
+			font-size: $font-huge;
+		    width: $font-huge;
+		    height: $font-huge;
+		}
+
+		.profile__container {
+			.profile__row {
+				width: 100%;
+				float: left;
+				margin: 0 3px;
+				padding: 2px;
+			}
+			span {
+				float: right;
+				border-bottom: solid 3px $primary-color;
+			}
+			.divider {
+			    margin: 10px 0;
+			    padding: 10px 0;
+			    border-bottom: solid 5px $primary-color;
+			}
+		}
+	}
+}

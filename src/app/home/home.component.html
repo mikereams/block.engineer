@@ -1,0 +1,87 @@
+<div  class="container-fluid hero">
+	<div class="container__inner" id="top">
+		<section 
+			class="section__hero"
+		>
+		<h1 class="title">block.engineer</h1>
+		<h2 class="slogan">In block.engineer you can prove your blockchain credentials by managing your profile via connecting to our open Engineer blockchain</h2>
+		<div
+			fxLayout
+			fxLayout.xs="column"
+			fxLayoutAlign="center"
+			fxLayoutGap="10px"
+			fxLayoutGap.xs="0"
+		>
+			<div fxFlex="50%" class="section__hero__block">
+			    <mat-icon color="white">build</mat-icon>
+				<h2>Prove your blockchain credentials</h2>
+				<p>Create your blockchain engineer passport by turning your workstation into a node and managing your JSON in a blockchain! It's fun and will impress your friends and family!</p>
+				<a  color="accent" mat-raised-button href="">Instructions</a>
+			</div>
+			<div fxFlex="50%" class="section__hero__block">
+			    <mat-icon color="white">search</mat-icon>
+				<h2>Find the best blockchain devs</h2>
+				<p>Search talent with a proven interest available to work in blockchain OR advertise onsite and let the best in blockchain come to you.</p>
+				<a color="accent" mat-raised-button href="mailto:ed@theline.digital">Contact us for details</a>
+			</div>
+		</div>
+		</section>
+	</div>
+</div>
+<div  class="container-fluid passport">
+	<div class="container__inner" id="top">
+		<section 
+			class="section__passport"
+		>
+		<div class="search">
+		  <h2>Check a passport</h2>
+		  <mat-form-field class="txid">
+    		<input #txid  matInput placeholder="Unique transaction ID">
+    		<mat-hint>Use your unique TXID to load your passport</mat-hint>
+		  </mat-form-field>
+   		  <button color="accent" mat-raised-button (click)="loadPassport(txid.value)" >Verify an address</button>
+		</div>
+
+		<div 
+			fxLayout
+			fxLayout.xs="column"
+			fxLayoutAlign="center"
+			fxLayoutGap="10px"
+			fxLayoutGap.xs="0"
+		>
+		<div fxFlex="500px">
+		<mat-card class="profile">
+		  <mat-card-content>
+		  	<div class="card__container">
+	  		    <mat-icon color="primary" class="pull-right">check_circle</mat-icon>
+			  	<h2>Publisher Id: <span>{{passport.publishers[0]}}</span></h2>
+			  	<div class="profile__container">
+				  	<div class="divider"></div>
+				  	<div class="profile__row name">Name: <span>{{ passport.keys[0] }}</span></div>
+				  	<div class="profile__row joined">Joined: <span> {{ passport.blocktime * 1000 | date }}</span></div>
+				  	<div class="profile__row verified">Verified: <span>{{ passport.confirmations }} </span></div>
+				  	<div class="profile__row blockchain">Experience level blockchain:<span>{{ passport.data.json.exp_block}}</span></div>
+				  	<div class="profile__row dev">Experience level dev:<span>{{ passport.data.json.exp_dev}}</span></div>
+				  	<div class="profile__row location">Location: <span>{{ passport.data.json.location}}</span></div>
+				  	<div class="profile__row linkedIn">LinkedIn: <span>{{ passport.data.json.linkedIn}}</span></div>
+				  	<div class="profile__row contact">Contact: <span>{{ passport.data.json.contact}}</span></div>
+				  	<div *ngIf="passport.data.json.forHire === 1" class="profile__row available">For hire: <mat-icon color="green" class="pull-right">check</mat-icon></div>
+			  	</div>
+		  	</div>
+		  </mat-card-content>
+		</mat-card>
+		</div>
+		</div>
+
+		<div class="search">
+		  <h2>Grant yourself permissions</h2>
+		  <mat-form-field class="txid">
+    		<input #address matInput placeholder="Address">
+    		<mat-hint>Put your wallet address here to authorize it to publish to the stream</mat-hint>
+		  </mat-form-field>
+   		  <button color="accent" mat-raised-button (click)="authorizeAddress(address.value)">Verify an address</button>
+		</div>
+
+		</section>
+	</div>
+</div>
