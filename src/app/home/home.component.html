@@ -4,7 +4,7 @@
 			class="section__hero"
 		>
 		<h1 class="title">block.engineer</h1>
-		<h2 class="slogan">In block.engineer you can prove your blockchain credentials by managing your profile via connecting to our open Engineer blockchain</h2>
+		<h2 class="slogan">In block.engineer you can prove your blockchain credentials by managing your profile by connecting to our open Engineer blockchain</h2>
 		<div
 			fxLayout
 			fxLayout.xs="column"
@@ -16,7 +16,7 @@
 			    <mat-icon color="white">build</mat-icon>
 				<h2>Prove your blockchain credentials</h2>
 				<p>Create your blockchain engineer passport by turning your workstation into a node and managing your JSON in a blockchain! It's fun and will impress your friends and family!</p>
-				<a  color="accent" mat-raised-button href="">Instructions</a>
+				<a color="accent" mat-raised-button href="https://medium.com/@theline_digital/a-blockchain-distributed-ledger-as-an-api-proof-of-concept-part-1-8319970e9778">Instructions</a>
 			</div>
 			<div fxFlex="50%" class="section__hero__block">
 			    <mat-icon color="white">search</mat-icon>
@@ -33,6 +33,7 @@
 		<section 
 			class="section__passport"
 		>
+		
 		<div class="search">
 		  <h2>Check a passport</h2>
 		  <mat-form-field class="txid">
@@ -65,7 +66,7 @@
 				  	<div class="profile__row location">Location: <span>{{ passport.data.json.location}}</span></div>
 				  	<div class="profile__row linkedIn">LinkedIn: <span>{{ passport.data.json.linkedIn}}</span></div>
 				  	<div class="profile__row contact">Contact: <span>{{ passport.data.json.contact}}</span></div>
-				  	<div *ngIf="passport.data.json.forHire === 1" class="profile__row available">For hire: <mat-icon color="green" class="pull-right">check</mat-icon></div>
+				  	<div *ngIf="passport.data.json.forHire == 1" class="profile__row available">For hire: <mat-icon color="green" class="pull-right">check</mat-icon></div>
 			  	</div>
 		  	</div>
 		  </mat-card-content>

@@ -27,14 +27,14 @@ export class HomeComponent implements OnInit {
   constructor(private dataService : DataService) { }
 
   ngOnInit() {
-    console.log(this.passport);
+    console.log('I want to work in blockchain, particularly in a startup. I work hard and am really passionate about the tech. Forgive my flaws for I shall improve :) If you want to have a conversation please get in touch with me at ed@theline.digital (my freelance brand)');
     this.loadPassport(this.passport.txid);
     // this.publishPassport(this.passport.data);
   }
 
   authorizeAddress(address){
     this.dataService.authorizeAddress(address).subscribe(response => {
-      alert(response);
+      console.log(response);
     });
 
   }

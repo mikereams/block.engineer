@@ -62,3 +62,18 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 840px) {
+	.container-fluid.hero {
+		padding: 10px 0;
+	}
+	.section__hero__block {
+		margin: 10px 0;
+	}
+	mat-form-field {
+		margin: 20px 0;
+	}
+	mat-card { 
+		margin-bottom: 15px;
+	}
+}
